@@ -2,7 +2,7 @@
 
 Welcome to the Starbucks Landing Page repository! This project is a responsive website created using HTML, CSS, and JavaScript to showcase information about Starbucks and its coffee offerings. It provides users with an engaging and informative browsing experience.
 
-![Starbucks Landing Page](ss.png)
+![Starbucks Landing Page](./images/ss.png)
 
 You can access the live version of the website [here](https://dot-d69.github.io/starbuck-landing-page/).
 
