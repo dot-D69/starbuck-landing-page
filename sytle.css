@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-section{
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -15,7 +15,7 @@ section{
     background: #fff;
 }
 
-header{
+header {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,21 +27,21 @@ header{
 }
 
 
-.logo{
+.logo {
     position: relative;
     max-width: 100px;
 }
 
-header ul{
+header ul {
     position: relative;
     display: flex;
 }
 
-header ul li{
+header ul li {
     list-style: none;
 }
 
-header ul li a{
+header ul li a {
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -50,7 +50,7 @@ header ul li a{
 
 }
 
-.main-content{
+.main-content {
     position: relative;
     width: 100%;
     display: flex;
@@ -58,12 +58,12 @@ header ul li a{
     align-items: center;
 }
 
-.main-content .textbox{
+.main-content .textbox {
     position: relative;
     max-width: 500px;
 }
 
-.main-content .textbox h2{
+.main-content .textbox h2 {
     color: #333;
     font-size: 4em;
     line-height: 1.2em;
@@ -71,12 +71,12 @@ header ul li a{
     margin-bottom: 20px;
 }
 
-.main-content .textbox h2 span{
+.main-content .textbox h2 span {
     color: #017143;
     font-size: 1.2em;
 }
 
-.main-content .textbox a{
+.main-content .textbox a {
     display: inline-block;
     text-decoration: none;
     margin-top: 30px;
@@ -86,7 +86,7 @@ header ul li a{
     color: #fff;
 }
 
-.main-content .imgbox{
+.main-content .imgbox {
     position: relative;
     max-width: 500px;
     max-height: 600px;
@@ -97,12 +97,12 @@ header ul li a{
 
 }
 
-.main-content .imgbox pic{
+.main-content .imgbox pic {
     max-width: 100%;
     max-height: 100%;
 }
 
-.footer-img{
+.footer-img {
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -111,25 +111,25 @@ header ul li a{
     display: flex;
 }
 
-.footer-img li{
+.footer-img li {
     list-style: none;
     display: inline-block;
     margin: 0 15px;
     cursor: pointer;
 }
 
-.footer-img li img{
+.footer-img li img {
     max-width: 60px;
     opacity: 0.9;
     transition: all 0.3s ease;
 }
 
-.footer-img :hover{
+.footer-img :hover {
     transform: scale(1.1) translateY(-10px);
 }
 
-.socials{
-    position: absolute; 
+.socials {
+    position: absolute;
     top: 50%;
     right: 0px;
     transform: translateY(-50%);
@@ -139,19 +139,48 @@ header ul li a{
     align-items: center;
 }
 
-.socials li{
+.socials li {
     list-style: none;
     margin: 10px 0px;
     cursor: pointer;
     filter: invert(1);
 }
 
-.circle{
-    position:absolute;
+.circle {
+    position: absolute;
     background: #017143;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     top: 0;
     left: 0;
-    clip-path: circle(600px at right 800px  );
+    clip-path: circle(600px at right 800px);
+}
+
+@media screen and (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+
+    header ul.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f9f9f9;
+        position: absolute;
+        top: 100%;
+
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    header ul.active li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
 }
